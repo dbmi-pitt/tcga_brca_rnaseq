@@ -12,7 +12,7 @@ For new users, I highly recommend installing Jupyter through Anaconda following 
 
 For this particular assignment, you will also need R. You can download and find installation instructions [here](https://www.r-project.org/).
 
-After R is installed, it needs to be configured for Jupyter to establish an RKernal. You can do this by installing an [RKernal](https://irkernel.github.io/installation/). Follow the instructions on the page and be sure to launch R from the command line instead of the app icon. Installation of the RKernal will fail if you launch from the app icon.
+After R is installed, it needs to be configured for Jupyter to establish an RKernel. You can do this by installing an [RKernel](https://irkernel.github.io/installation/). Follow the instructions on the page and be sure to launch R from the command line instead of the app icon. Installation of the RKernel will fail if you launch from the app icon.
 
 
 **note** For R projects, I highly recommend using [RStudio](https://www.rstudio.com/products/rstudio/download/) and RMarkdown instead of Jupyter Notebooks, but that will not be required to complete this module, which was written in Jupyter for purpose of instruction.
@@ -82,10 +82,153 @@ This assignment is broken into 4 different python notebooks. Do them in order. N
 - b) Visualize the results with a few QC plots
 - c) Generate a heatmap of filtered DEGs
 
+# Description
 
 
 
 
+The notebook details steps from locating publically-available RNAseq counts and TPM data from TCGA through identification of differentially expressed genes with [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) and the generation of heatmaps.
+
+This jupyter notebook is written for use with an R kernel.
+
+# Funding
+Developed by the University of Pittsburgh Biomedical Informatics Training Program with the support of the National Library of Medicine data science supplement to the University of Pittsburgh (Grant # T15LM007059-30S1).
+
+# 1. Learning Outcomes
+
+Students will learn how to access RNASeq data from TCGA, to pre-process and manage data, and to conduct differential expression analyses.
+
+# 2. Licensing/Restrictions/Access
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+# 3. Target Student Audience 
+
+Graduate or upper level undergraduate students learning bioinformatics. 
+
+# 4. Prerequisite Skills and Knowledge Required
+
+Familiarity with R programming
+
+# 5. Domain Problem
+
+Gene expression analysis in samples from cancer patients. 
+
+# 6. Dataset for the case study
+
+TCGA RNASeq data as downlaoded from [Xena Browser](https://xenabrowser.net)
+
+# 7. Skills to be taught
+
+## 7.1 Knowledge representation
+
+- Tabular representation of Gene expression data
+- TCGA clnical data 
+
+## 7.2 Computation
+
+- Data preparation as needed for differential expression analysis.
+- Using TCGA identifiers and data attributes to identify patient classification.
+- Differential expression analysis with [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
+- Collapsing transcript counts to gene counts
+- Metadata mapping to go from gene names to gene symbols
+- Filtering genes based on expression or other thresholds. 
+
+## 7.3 Visual Analysis
+
+- Heatmaps
+
+
+## 7.4 Statistical analyses
+
+- Differential expression analysis with DeSEQ2
+## 7.5 Reproducibility 
+
+- Jupyter notebook demonstrating reproducible workflow
+
+# 8. Problem solving skills
+
+- Using attributes of TCGA and related datasets to identify cohort identification.
+- Data organizing and preparation.
+
+- Comparing expression in multile groups.
+# 9. Reflection 
+
+- What are some of the challenges involved in using TCGA data? 
+- How might the analyses conducted be informed by changes in supporting information sources, such as gene names and/or locations? 
+- What sort of challenges might be faced if you were to try to do this analysis with data from another source?
+
+
+
+# Description
+
+## Funding
+Developed by the University of Pittsburgh Biomedical Informatics Training Program with the support of the National Library of Medicine data science supplement to the University of Pittsburgh (Grant # T15LM007059-30S1).
+
+## 1. Learning Outcomes
+
+Students will learn how to access RNASeq data from TCGA, to pre-process and manage data, and to conduct differential expression analyses.
+
+## 2. Licensing/Restrictions/Access
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+## 3. Target Student Audience 
+
+Graduate or upper level undergraduate students learning bioinformatics. 
+
+## 4. Prerequisite Skills and Knowledge Required
+
+Familiarity with R programming
+
+## 5. Domain Problem
+
+Gene expression analysis in samples from cancer patients. 
+
+## 6. Dataset for the case study
+
+TCGA RNASeq data as downlaoded from [Xena Browser](https://xenabrowser.net)
+
+## 7. Skills to be taught
+
+### 7.1 Knowledge representation
+
+- Tabular representation of Gene expression data
+- TCGA clnical data 
+
+### 7.2 Computation
+
+- Data preparation as needed for differential expression analysis.
+- Using TCGA identifiers and data attributes to identify patient classification.
+- Differential expression analysis with [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
+- Collapsing transcript counts to gene counts
+- Metadata mapping to go from gene names to gene symbols
+- Filtering genes based on expression or other thresholds. 
+
+### 7.3 Visual Analysis
+
+- Heatmaps
+
+
+### 7.4 Statistical analyses
+
+- Differential expression analysis with DeSEQ2
+### 7.5 Reproducibility 
+
+- Jupyter notebook demonstrating reproducible workflow
+
+## 8. Problem solving skills
+
+- Using attributes of TCGA and related datasets to identify cohort identification.
+- Data organizing and preparation.
+
+- Comparing expression in multile groups.
+
+## 9. Reflection 
+
+- What are some of the challenges involved in using TCGA data? 
+- How might the analyses conducted be informed by changes in supporting information sources, such as gene names and/or locations? 
+- What sort of challenges might be faced if you were to try to do this analysis with data from another source?
 
 
 
