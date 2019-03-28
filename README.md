@@ -9,11 +9,12 @@ You can run these notebooks on a jupyterhub server - potentially one provided by
 
 ## 1. Installing the appropriate Jupyter configuration on your computer
 For new users, I highly recommend installing Jupyter through Anaconda following these [instructions](https://jupyter.readthedocs.io/en/latest/install.html) and installing the latest version of Python 3.x.
+**note** by default Windows does not add Anaconda or Jupyter to your PATH. You can change this during the installation by telling it to install to the PATH see step 6 of these Jupyter installation instructions [here](https://www.datacamp.com/community/tutorials/installing-anaconda-windows). If you do not add anaconda to your PATH you will need to open it using the app or change the PATH later. 
 
 For this particular assignment, you will also need R. You can download and find installation instructions [here](https://www.r-project.org/).
 
-After R is installed, it needs to be configured for Jupyter to establish an RKernel. You can do this by installing an [RKernel](https://irkernel.github.io/installation/). Follow the instructions on the page and be sure to launch R from the command line instead of the app icon. Installation of the RKernel will fail if you launch from the app icon.
-
+After R is installed, it needs to be configured for Jupyter to establish an RKernel. You can do this by installing an [RKernel](https://irkernel.github.io/installation/). Follow the instructions on the page and be sure to launch R from the command line instead of the app icon. Installation of the RKernel will fail if you launch from the app icon on Windows. 
+**note** if anaconda is not in your path, R will not find it when trying to push RKernel. If you open the Anaconda prompt and run R from there, it should find Jupyter.
 
 **note** For R projects, I highly recommend using [RStudio](https://www.rstudio.com/products/rstudio/download/) and RMarkdown instead of Jupyter Notebooks, but that will not be required to complete this module, which was written in Jupyter for purpose of instruction.
 
@@ -53,7 +54,7 @@ At this point, you should have the URL for your own personal copy of this reposi
 
 1. Go to your Jupyter home page (the easiest way to do this is to use the command ```jupyter notebook``` from the command prompt). Click "New" on the top right, and select ["Terminal"](https://github.com/dbmi-pitt/SocialMediaDataScience/blob/master/images/new-terminal.png). This will create a linux command-line terminal window in the browser. Alternatively, if you are using JupyterHub, press the "Terminal" button in the Launcher screen.
 2. run ```git clone ...``` replacing the ... with the URL of your repository. You will need to provide your GitHub or GitLab user name and password. **Note** if you receive an error, it might be because you do not have git installed. To install git follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-3. In a new browser tab (or in an existing browser tab if you already have it open), go to the home page of your Jupyter environment. You will see a new directory, likely entitled "rnaseq-tcga". This is where you will do your work. If you are using JupyterLab, this directory will appear in the file browser on the left.
+3. In a new browser tab (or in an existing browser tab if you already have it open), go to the home page of your Jupyter environment. You will see a new directory, likely entitled "tcga_brca_rnaseq". This is where you will do your work. If you are using JupyterLab, this directory will appear in the file browser on the left.
 
 ## 5. Start a Jupyter notebook and do your work
 
