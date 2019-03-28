@@ -1,3 +1,6 @@
+
+
+
 # Differential Expression Analysis using DESeq2 on RNAseq data from TCGA
 This jupyter notebook is written for use with an R kernel.
 
@@ -6,6 +9,15 @@ The notebook details steps from locating publically-available RNAseq counts, abu
 Content is provided in the form of Jupyter notebooks. If you need an introduction to Jupyter, you can see the official [documents](https://jupyter.org/).
 
 You can run these notebooks on a jupyterhub server - potentially one provided by your course - or on your own computer, appropriately configured Python, R, an RKernel, and appropriate R libraries (installed through the first notebook).
+
+# Funding
+
+Data science modules developed by the University of Pittsburgh Biomedical Informatics Training Program with the support of the National Library of Medicine data science supplement to the University of Pittsburgh (Grant # T15LM007059-30S1). 
+
+
+# Using the module
+
+The following steps describe how to use these modules in a Jupyter environment.
 
 ## 1. Installing the appropriate Jupyter configuration on your computer
 For new users, I highly recommend installing Jupyter through Anaconda following these [instructions](https://jupyter.readthedocs.io/en/latest/install.html) and installing the latest version of Python 3.x.
