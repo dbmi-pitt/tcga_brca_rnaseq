@@ -1,5 +1,5 @@
 
-
+[![DOI](https://zenodo.org/badge/170748515.svg)](https://zenodo.org/badge/latestdoi/170748515)
 
 # Differential Expression Analysis using DESeq2 on RNAseq data from TCGA
 This jupyter notebook is written for use with an R kernel.
